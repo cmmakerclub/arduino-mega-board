@@ -6,12 +6,23 @@ Blockly.Blocks['io_analog_read'] = {
     this.appendDummyInput()
         .appendField("read analog input pin ")
         .appendField(new Blockly.FieldDropdown([
-                                            ["A0", "A0"],
-                                            ["A1", "A1"],
-                                            ["A2", "A2"],
-                                            ["A3", "A3"],
-                                            ["A4", "A4"],
-                                            ["A5", "A5"]]), "pin");
+          ["A0","A0"], 
+          ["A1","A1"], 
+          ["A2","A2"], 
+          ["A3","A3"],
+          ["A4","A4"],
+          ["A5","A5"],
+          ["A6","A6"],
+          ["A7","A7"],
+          ["A8","A8"],
+          ["A9","A9"],
+          ["A10","A10"],
+          ["A11","A11"], 
+          ["A12","A12"], 
+          ["A13","A13"], 
+          ["A14","A14"], 
+          ["A15","A15"]]), 
+          "pin");
     this.setInputsInline(true);
     this.setOutput(true, "Number");
     this.setColour(45);
@@ -26,12 +37,21 @@ Blockly.Blocks['io_pwm_write'] = {
     this.appendDummyInput()
         .appendField("PWM write pin")
         .appendField(new Blockly.FieldDropdown([
-                                            ["3", "3"],
-                                            ["5", "5"],
-                                            ["6", "6"],
-                                            ["9", "9"],
-                                            ["10", "10"],
-                                            ["11", "11"]]), "pin");
+          ["2", "2"],
+          ["3", "3"],
+          ["4", "4"],
+          ["5", "5"],
+          ["6", "6"],
+          ["7", "7"],
+          ["8", "8"],
+          ["9", "9"],
+          ["10", "10"],
+          ["11", "11"],
+          ["12", "12"],
+          ["13", "13"],
+          ["44", "44"],
+          ["45", "45"],
+          ["46", "46"]]), "pin");
     this.appendValueInput("value")
         .setCheck("Number")
         .appendField("value");
