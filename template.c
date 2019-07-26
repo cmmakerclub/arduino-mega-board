@@ -1,4 +1,6 @@
 #include <Arduino.h>
+#include <pins_arduino.h>
+
 typedef int Number;
 typedef int Boolean;
 
